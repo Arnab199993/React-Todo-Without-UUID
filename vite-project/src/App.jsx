@@ -35,7 +35,7 @@ const colorchange=()=>{
 
 const checkboxeditdata = (index) => {
     let item = itemsarray[index];
-    item.completed = true;
+    item.completed = !item.completed;
     itemsarray[index] = item;
     setItemsArray([...itemsarray]);
   };
